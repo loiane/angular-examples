@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DIY One-way Data Binding</title>
+</head>
+<body>
+    Name:<input type="text"/>
+    </br>Hello world!
+
+    <script>
+        var textInputElement = document.getElementById('textInput'),
+                nameDivElement = document.getElementById('nameDiv');
+
+        textInputElement.addEventListener('keyup', function(){
+            var text = textInputElement.value;
+            nameDivElement.innerHTML = text;
+        });
+    </script>
+</body>
+</html>

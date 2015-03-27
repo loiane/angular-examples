@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DIY One-way Data Binding with jQuery</title>
+
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    Name:<input id="textInput" type="text"/></br>
+    Hello <span id="nameDiv"></span>!
+
+    <script>
+        $('#textInput').on('keyup', function(){
+            $('#nameDiv').html($('#textInput').val());
+        });
+    </script>
+</body>
+</html>
